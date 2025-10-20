@@ -47,7 +47,7 @@ Inventory/
 
 # API Endpoints
 
-Base URL: http://localhost:3000/api
+Base URL: inventory-api-production-7046.up.railway.app
 
 # Health Check
 - GET /health - API status and health check
