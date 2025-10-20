@@ -119,8 +119,8 @@ Base URL: https://inventory-api-production-7046.up.railway.app
 # Testing Examples
 
 # Create Product
-  POST http://localhost:3000/api/products \
-  "Content-Type: application/json" \
+  POST https://inventory-api-production-7046.up.railway.app/api/products
+  "Content-Type: application/json" 
    '{
       "sku": "P001",
       "name": "Tuyo",
@@ -129,16 +129,16 @@ Base URL: https://inventory-api-production-7046.up.railway.app
   }'
 
 # Create Supplier
-   POST http://localhost:3000/api/suppliers \
-   "Content-Type: application/json" \
+   POST https://inventory-api-production-7046.up.railway.app/api/suppliers 
+   "Content-Type: application/json" 
    '{
       "name": "Acme Supplies",
       "contact": "acme@example.com"
     }'
 
 # Create Order
-  POST http://localhost:3000/api/orders \
-  "Content-Type: application/json" \
+  POST https://inventory-api-production-7046.up.railway.app/api/orders 
+  "Content-Type: application/json" 
    '{
       "supplierId": "SUPPLIER_OBJECT_ID",
       "status": "pending",
@@ -152,10 +152,7 @@ Base URL: https://inventory-api-production-7046.up.railway.app
    }'
 
 # Get All Products
-curl http://localhost:3000/api/products
-
-# Health Check
-curl http://localhost:3000/health
+ https://inventory-api-production-7046.up.railway.app/api/products
 
 # Configuration
 
